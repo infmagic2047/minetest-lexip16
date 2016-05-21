@@ -1,0 +1,33 @@
+_none_texture = ('color_black', 'simple_block', 'transparent')
+
+
+textures = {
+    'technic_chest_form_bg': 'gui_formbg',
+    'technic_copper_chest_front': (('copper', 'copper'), 'chest_front'),
+    'technic_copper_chest_inventory': _none_texture,
+    'technic_copper_chest_lock_overlay': ('copper', 'chest_lock_overlay', 'chest_lock_overlay'),
+    'technic_copper_chest_side': ('copper', 'chest_side'),
+    'technic_copper_chest_top': ('copper', 'chest_top'),
+    'technic_gold_chest_front': (('gold', 'gold'), 'chest_front'),
+    'technic_gold_chest_inventory': _none_texture,
+    'technic_gold_chest_lock_overlay': ('gold', 'chest_lock_overlay', 'chest_lock_overlay'),
+    'technic_gold_chest_side': ('gold', 'chest_side'),
+    'technic_gold_chest_top': ('gold', 'chest_top'),
+    'technic_iron_chest_front': (('steel' ,'steel'), 'chest_front'),
+    'technic_iron_chest_inventory': _none_texture,
+    'technic_iron_chest_lock_overlay': ('steel', 'chest_lock_overlay', 'chest_lock_overlay'),
+    'technic_iron_chest_side': ('steel', 'chest_side'),
+    'technic_iron_chest_top': ('steel', 'chest_top'),
+    'technic_main_inventory': _none_texture,
+    'technic_mithril_chest_front': (('mithril', 'mithril'), 'chest_front'),
+    'technic_mithril_chest_inventory': _none_texture,
+    'technic_mithril_chest_lock_overlay': ('mithril', 'chest_lock_overlay', 'chest_lock_overlay'),
+    'technic_mithril_chest_side': ('mithril', 'chest_side'),
+    'technic_mithril_chest_top': ('mithril', 'chest_top'),
+    'technic_silver_chest_front': (('silver', 'silver'), 'chest_front'),
+    'technic_silver_chest_inventory': _none_texture,
+    'technic_silver_chest_lock_overlay': ('silver', 'chest_lock_overlay', 'chest_lock_overlay'),
+    'technic_silver_chest_side': ('silver', 'chest_side'),
+    'technic_silver_chest_top': ('silver', 'chest_top'),
+    'technic_wooden_chest_inventory': _none_texture,
+}
