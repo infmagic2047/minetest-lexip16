@@ -1,4 +1,5 @@
 textures = {
+    'farming_straw': ('wheat_plant_2', 'straw'),
     'farming_tool_bronzehoe': (('bronze', 'wood'), 'hoe', 'hoe'),
     'farming_tool_diamondhoe': (('diamond', 'wood'), 'hoe', 'hoe'),
     'farming_tool_mesehoe': (('mese', 'wood'), 'hoe', 'hoe'),
