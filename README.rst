@@ -9,3 +9,5 @@ will be in ``output`` directory.
 
 To make a zip file containing the textures, run ``scons zip``. Append
 ``OPTIMIZE=0`` to command line if you don't have ``optipng``.
+
+License: CC0
