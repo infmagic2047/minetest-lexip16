@@ -32,4 +32,9 @@ textures = {
     'moretrees_oak_trunk': ('oak_tree', 'tree'),
     'moretrees_oak_trunk_top': (('oak_tree', 'oak_wood'), 'tree_top'),
     'moretrees_oak_wood': ('oak_wood', 'wood'),
+    'moretrees_palm_leaves': ('palm_leaves', 'simple_block', 'palm_leaves'),
+    'moretrees_palm_sapling': (('palm_tree', 'palm_leaves'), 'sapling', 'sapling'),
+    'moretrees_palm_trunk': ('palm_tree', 'palm_tree'),
+    'moretrees_palm_trunk_top': (('palm_tree', 'palm_wood'), 'palm_tree_top'),
+    'moretrees_palm_wood': ('palm_wood', 'wood'),
 }
