@@ -5,9 +5,9 @@ from rules.unifieddyes import (_unifieddyes_color_map,
 
 
 _unifiedbricks_multicolor_modifiers = {
-    ('medium_{}', '{}', 'medium_{}', 'light_{}'),
-    ('dark_{}', 'medium_{}', 'dark_{}', '{}'),
-    ('light_{}', 'light_{}', '{}', 'pastel_{}'),
+    ('dark_{}', 'dark_{}', 'medium_{}', 'medium_{}_s50'),
+    ('medium_{}', 'medium_{}', 'dark_{}', '{}_s50'),
+    ('light_{}', '{}', 'light_{}', 'medium_{}_s50'),
 }
 
 _unifiedbricks_multicolor_colors = {
@@ -17,9 +17,9 @@ _unifiedbricks_multicolor_colors = {
 }
 
 _unifiedbricks_multicolor_colors.update({
-    ('darkgrey', 'dark_gray', 'black', 'gray'),
+    ('darkgrey', 'dark_gray', 'gray', 'light_gray'),
     ('grey', 'gray', 'dark_gray', 'light_gray'),
-    ('lightgrey', 'light_gray', 'gray', 'white'),
+    ('lightgrey', 'light_gray', 'dark_gray', 'gray'),
 })
 
 _unifiedbricks_multicolor_color_map = {
