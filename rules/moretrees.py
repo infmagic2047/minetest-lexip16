@@ -27,4 +27,9 @@ textures = {
     'moretrees_fir_wood': ('fir_wood', 'wood'),
     'moretrees_jungletree_leaves_red': ('jungle_leaves_red', 'simple_block', 'leaves'),
     'moretrees_jungletree_leaves_yellow': ('jungle_leaves_yellow', 'simple_block', 'leaves'),
+    'moretrees_oak_leaves': ('oak_leaves', 'simple_block', 'leaves'),
+    'moretrees_oak_sapling': (('oak_tree', 'oak_leaves'), 'sapling', 'sapling'),
+    'moretrees_oak_trunk': ('oak_tree', 'tree'),
+    'moretrees_oak_trunk_top': (('oak_tree', 'oak_wood'), 'tree_top'),
+    'moretrees_oak_wood': ('oak_wood', 'wood'),
 }
