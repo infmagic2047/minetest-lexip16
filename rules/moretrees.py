@@ -53,6 +53,11 @@ textures = {
     'moretrees_spruce_trunk': ('spruce_tree', 'tree'),
     'moretrees_spruce_trunk_top': (('spruce_tree', 'spruce_wood'), 'tree_top'),
     'moretrees_spruce_wood': ('spruce_wood', 'wood'),
+    'moretrees_willow_leaves': ('willow_leaves', 'simple_block', 'leaves'),
+    'moretrees_willow_sapling': (('willow_tree', 'willow_leaves'), 'sapling', 'sapling'),
+    'moretrees_willow_trunk': ('willow_tree', 'tree'),
+    'moretrees_willow_trunk_top': (('willow_tree', 'willow_wood'), 'tree_top'),
+    'moretrees_willow_wood': ('willow_wood', 'wood'),
 }
 
 override_textures = {
