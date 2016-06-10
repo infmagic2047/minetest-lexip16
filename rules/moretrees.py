@@ -19,4 +19,10 @@ textures = {
     'moretrees_cedar_trunk': ('cedar_tree', 'tree'),
     'moretrees_cedar_trunk_top': (('cedar_tree', 'cedar_wood'), 'tree_top'),
     'moretrees_cedar_wood': ('cedar_wood', 'wood'),
+    'moretrees_fir_leaves': ('fir_leaves', 'simple_block', 'pine_needles'),
+    'moretrees_fir_leaves_bright': ('fir_leaves_bright', 'simple_block', 'pine_needles'),
+    'moretrees_fir_sapling': (('fir_tree', 'fir_leaves'), 'sapling', 'sapling'),
+    'moretrees_fir_trunk': ('fir_tree', 'tree'),
+    'moretrees_fir_trunk_top': (('fir_tree', 'fir_wood'), 'tree_top'),
+    'moretrees_fir_wood': ('fir_wood', 'wood'),
 }
