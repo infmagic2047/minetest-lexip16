@@ -43,6 +43,11 @@ textures = {
     'moretrees_rubber_tree_trunk_empty': ('rubber_tree_tree', 'tree'),
     'moretrees_rubber_tree_trunk_top': (('rubber_tree_tree', 'rubber_tree_wood', 'latex'), 'rubber_tree_tree_top'),
     'moretrees_rubber_tree_wood': ('rubber_tree_wood', 'wood'),
+    'moretrees_sequoia_leaves': ('sequoia_leaves', 'simple_block', 'pine_needles'),
+    'moretrees_sequoia_sapling': (('sequoia_tree', 'sequoia_leaves'), 'sapling', 'sapling'),
+    'moretrees_sequoia_trunk': ('sequoia_tree', 'tree'),
+    'moretrees_sequoia_trunk_top': (('sequoia_tree', 'sequoia_wood'), 'tree_top'),
+    'moretrees_sequoia_wood': ('sequoia_wood', 'wood'),
 }
 
 override_textures = {
