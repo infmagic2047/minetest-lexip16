@@ -1,5 +1,5 @@
-from unifieddyes import (_unifieddyes_color_modifiers,
-                         _unifieddyes_colors_base)
+from rules.unifieddyes import (_unifieddyes_color_modifiers,
+                               _unifieddyes_colors_base)
 
 
 _stained_glass_modifiers = _unifieddyes_color_modifiers | {
