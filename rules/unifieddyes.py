@@ -18,13 +18,14 @@ _unifieddyes_colors = {
 }
 
 _unifieddyes_colors.update({
-    'black', 'dark_grey', 'grey', 'light_grey', 'white',
+    'black', 'darkgrey', 'grey', 'lightgrey', 'white',
 })
 
 _unifieddyes_color_map = {
-    name.replace('dark_grey', 'darkgrey').replace(
-        'light_grey', 'lightgrey'):
-    'color_' + name.replace('grey', 'gray')
+    name: 'color_' +
+          name.replace('grey', 'gray').replace(
+              'darkgray', 'dark_gray').replace(
+                  'lightgray', 'light_gray')
     for name in _unifieddyes_colors
 }
 
