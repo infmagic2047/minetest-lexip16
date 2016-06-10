@@ -14,4 +14,9 @@ textures = {
     'moretrees_birch_trunk': ('birch_tree', 'aspen_tree'),
     'moretrees_birch_trunk_top': (('birch_tree', 'birch_wood'), 'aspen_tree_top'),
     'moretrees_birch_wood': ('birch_wood', 'wood'),
+    'moretrees_cedar_leaves': ('cedar_leaves', 'simple_block', 'pine_needles'),
+    'moretrees_cedar_sapling': (('cedar_tree', 'cedar_leaves'), 'sapling', 'sapling'),
+    'moretrees_cedar_trunk': ('cedar_tree', 'tree'),
+    'moretrees_cedar_trunk_top': (('cedar_tree', 'cedar_wood'), 'tree_top'),
+    'moretrees_cedar_wood': ('cedar_wood', 'wood'),
 }
