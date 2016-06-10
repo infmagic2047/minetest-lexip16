@@ -5,8 +5,8 @@ _dye_colors = {
 }
 
 _dye_color_map = {
-    name: ('color_' +
-           name.replace('grey', 'gray').replace('pink', 'light_red'))
+    name: 'color_' +
+          name.replace('grey', 'gray').replace('pink', 'light_red')
     for name in _dye_colors
 }
 

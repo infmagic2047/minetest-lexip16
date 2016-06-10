@@ -1,4 +1,4 @@
-from rules.dye import _dye_colors
+from rules.dye import _dye_color_map
 
 
 _unifieddyes_colors_base = {
@@ -22,15 +22,16 @@ _unifieddyes_colors.update({
 })
 
 _unifieddyes_color_map = {
-    name.replace('light_grey', 'lightgrey'):
-        'color_' + name.replace('grey', 'gray')
+    name.replace('dark_grey', 'darkgrey').replace(
+        'light_grey', 'lightgrey'):
+    'color_' + name.replace('grey', 'gray')
     for name in _unifieddyes_colors
 }
 
 _unifieddyes_dye_color_map = {
     name: color
     for name, color in _unifieddyes_color_map.items()
-    if name not in _dye_colors
+    if color not in _dye_color_map.values()
 }
 
 

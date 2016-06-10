@@ -13,8 +13,7 @@ _stained_glass_colors = {
 }
 
 _stained_glass_color_map = {
-    name.replace('light_grey', 'lightgrey'):
-        'color_' + name.replace('grey', 'gray')
+    name: 'color_' + name
     for name in _stained_glass_colors
 }
 
