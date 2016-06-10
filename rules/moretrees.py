@@ -25,4 +25,6 @@ textures = {
     'moretrees_fir_trunk': ('fir_tree', 'tree'),
     'moretrees_fir_trunk_top': (('fir_tree', 'fir_wood'), 'tree_top'),
     'moretrees_fir_wood': ('fir_wood', 'wood'),
+    'moretrees_jungletree_leaves_red': ('jungle_leaves_red', 'simple_block', 'leaves'),
+    'moretrees_jungletree_leaves_yellow': ('jungle_leaves_yellow', 'simple_block', 'leaves'),
 }
