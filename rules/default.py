@@ -94,6 +94,7 @@ textures = {
     'default_mese_block': ('mese', 'ore_block'),
     'default_mese_crystal': ('mese', 'ore_crystal', 'ore_crystal'),
     'default_mese_crystal_fragment': ('mese', 'fragment', 'fragment'),
+    'default_meselamp': (('mese', 'glass'), 'mese_lamp'),
     'default_mineral_coal': ('coal', 'simple_block', 'mineral'),
     'default_mineral_copper': ('copper', 'simple_block', 'mineral'),
     'default_mineral_diamond': ('diamond', 'simple_block', 'mineral'),
