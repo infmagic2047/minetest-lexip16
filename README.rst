@@ -12,4 +12,4 @@ To make a zip file containing the textures, run ``scons zip``. Append
 
 License: CC0
 
-.. _releases: https://github.com/yyt16384/minetest-lexip16/releases/download/latest/lexip16.zip
+.. _releases: https://github.com/yyt16384/minetest-lexip16/releases
