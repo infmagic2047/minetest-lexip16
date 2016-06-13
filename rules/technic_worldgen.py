@@ -12,6 +12,8 @@ textures = {
     'technic_lead_block': ('lead', 'ore_block'),
     'technic_lead_ingot': ('lead', 'cuboid', 'cuboid'),
     'technic_lead_lump': ('lead', 'ore_lump', 'ore_lump'),
+    'technic_marble': ('marble', 'marble'),
+    'technic_marble_bricks': ('marble', 'brick'),
     'technic_mineral_chromium': ('chromium', 'simple_block', 'mineral'),
     'technic_mineral_lead': ('lead', 'simple_block', 'mineral'),
     'technic_mineral_sulfur': ('sulfur', 'simple_block', 'mineral'),
