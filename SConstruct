@@ -105,11 +105,14 @@ def add_all(textures):
             add(k, *v)
 
 
-def add_overrides(overrides):
+def add_overrides(overrides, overrides_noprefix):
+    overrides_all = {pair: PROJECT_NAME + '_override_' + texture
+                     for pair, texture in overrides.items()}
+    overrides_all.update(overrides_noprefix)
+
     lines = []
-    for (nodename, face), texture in sorted(overrides.items()):
-        lines.append('{} {} {}_override_{}.png'.format(
-            nodename, face, PROJECT_NAME, texture))
+    for (nodename, face), texture in sorted(overrides_all.items()):
+        lines.append('{} {} {}.png'.format(nodename, face, texture))
 
     def write_overrides(target, source, env):
         with open(str(target[0]), 'w') as fout:
@@ -122,7 +125,7 @@ def add_overrides(overrides):
 add_all(rules.textures)
 add_all({'{}_override_{}'.format(PROJECT_NAME, k): v
          for k, v in rules.override_textures.items()})
-add_overrides(rules.overrides)
+add_overrides(rules.overrides, rules.overrides_noprefix)
 env.Default('output')
 env.Alias('zip', PROJECT_NAME + '.zip')
 if env.GetOption('clean'):

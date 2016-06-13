@@ -16,6 +16,10 @@ textures = {
     'technic_mineral_sulfur': ('sulfur', 'simple_block', 'mineral'),
     'technic_mineral_uranium': ('uranium', 'simple_block', 'mineral'),
     'technic_mineral_zinc': ('zinc', 'simple_block', 'mineral'),
+    'technic_rubber_leaves': 'moretrees_rubber_tree_leaves',
+    'technic_rubber_sapling': 'moretrees_rubber_tree_sapling',
+    'technic_rubber_tree_empty': 'moretrees_rubber_tree_trunk_empty',
+    'technic_rubber_tree_full': 'moretrees_rubber_tree_trunk',
     'technic_stainless_steel_block': ('stainless_steel', 'ore_block'),
     'technic_stainless_steel_ingot': ('stainless_steel', 'cuboid', 'cuboid'),
     'technic_sulfur_lump': ('sulfur', 'ore_lump', 'ore_lump'),
@@ -27,4 +31,9 @@ textures = {
     'technic_zinc_block': ('zinc', 'ore_block'),
     'technic_zinc_ingot': ('zinc', 'cuboid', 'cuboid'),
     'technic_zinc_lump': ('zinc', 'ore_lump', 'ore_lump'),
+}
+
+overrides_noprefix = {
+    ('moretrees:rubber_tree_trunk', 'bottom'): 'moretrees_rubber_tree_trunk_top',
+    ('moretrees:rubber_tree_trunk', 'top'): 'moretrees_rubber_tree_trunk_top',
 }

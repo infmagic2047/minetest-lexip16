@@ -5,6 +5,7 @@ from pkgutil import iter_modules
 textures = {}
 override_textures = {}
 overrides = {}
+overrides_noprefix = {}
 
 
 for _, name, _ in iter_modules(__path__):
@@ -12,3 +13,4 @@ for _, name, _ in iter_modules(__path__):
     textures.update(getattr(mod, 'textures', {}))
     override_textures.update(getattr(mod, 'override_textures', {}))
     overrides.update(getattr(mod, 'overrides', {}))
+    overrides_noprefix.update(getattr(mod, 'overrides_noprefix', {}))
