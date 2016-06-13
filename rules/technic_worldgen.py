@@ -8,6 +8,7 @@ textures = {
     'technic_chromium_block': ('chromium', 'ore_block'),
     'technic_chromium_ingot': ('chromium', 'cuboid', 'cuboid'),
     'technic_chromium_lump': ('chromium', 'ore_lump', 'ore_lump'),
+    'technic_granite': (('granite_1', 'granite_2'), 'granite'),
     'technic_lead_block': ('lead', 'ore_block'),
     'technic_lead_ingot': ('lead', 'cuboid', 'cuboid'),
     'technic_lead_lump': ('lead', 'ore_lump', 'ore_lump'),
