@@ -55,6 +55,7 @@ textures = {
     'default_fence_overlay': ('fence_overlay', 'simple_block', 'fence_overlay'),
     'default_fence_pine_wood': ('pine_wood', 'fence', 'fence'),
     'default_fence_wood': ('wood', 'fence', 'fence'),
+    'default_flint': ('stone', 'circle', 'circle'),
     'default_furnace_bottom': 'default_furnace_top',
     'default_furnace_fire_bg': ('color_gray', 'simple_block', 'furnace_fire'),
     'default_furnace_fire_fg': ('fire', 'simple_block', 'furnace_fire'),
