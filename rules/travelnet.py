@@ -9,6 +9,6 @@ override_textures = {
 }
 
 overrides = {
-    ('travelnet:travelnet', 'back'): 'travelnet_travelnet_topbottom',
-    ('travelnet:travelnet', 'left'): 'travelnet_travelnet_topbottom',
+    ('travelnet:travelnet', 'back'): '_travelnet_travelnet_topbottom',
+    ('travelnet:travelnet', 'left'): '_travelnet_travelnet_topbottom',
 }

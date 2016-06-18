@@ -65,6 +65,6 @@ override_textures = {
 }
 
 overrides = {
-    ('moretrees:rubber_tree_trunk_empty', 'bottom'): 'moretrees_rubber_tree_trunk_top_empty',
-    ('moretrees:rubber_tree_trunk_empty', 'top'): 'moretrees_rubber_tree_trunk_top_empty',
+    ('moretrees:rubber_tree_trunk_empty', 'bottom'): '_moretrees_rubber_tree_trunk_top_empty',
+    ('moretrees:rubber_tree_trunk_empty', 'top'): '_moretrees_rubber_tree_trunk_top_empty',
 }

@@ -118,13 +118,9 @@ def get_texture_string(parts):
                     for part in parts)
 
 
-def add_overrides(overrides, overrides_noprefix):
-    overrides_all = {pair: PROJECT_NAME + '_override_' + texture
-                     for pair, texture in overrides.items()}
-    overrides_all.update(overrides_noprefix)
-
+def add_overrides(overrides):
     lines = []
-    for (nodename, face), texture in sorted(overrides_all.items()):
+    for (nodename, face), texture in sorted(overrides.items()):
         lines.append('{} {} {}'.format(
             nodename, face, get_texture_string(
                 (texture,) if isinstance(texture, str) else texture)))
@@ -140,7 +136,7 @@ def add_overrides(overrides, overrides_noprefix):
 add_all(rules.textures)
 add_all({'{}_override_{}'.format(PROJECT_NAME, k): v
          for k, v in rules.override_textures.items()})
-add_overrides(rules.overrides, rules.overrides_noprefix)
+add_overrides(rules.overrides)
 env.Default('output')
 env.Alias('zip', PROJECT_NAME + '.zip')
 if env.GetOption('clean'):

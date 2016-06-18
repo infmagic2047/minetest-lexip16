@@ -36,7 +36,7 @@ textures = {
     'technic_zinc_lump': ('zinc', 'ore_lump', 'ore_lump'),
 }
 
-overrides_noprefix = {
+overrides = {
     ('moretrees:rubber_tree_trunk', 'bottom'): 'moretrees_rubber_tree_trunk_top',
     ('moretrees:rubber_tree_trunk', 'top'): 'moretrees_rubber_tree_trunk_top',
 }

@@ -12,7 +12,7 @@ override_textures = {
     'pipeworks_tube_plain_right_overlay': ('plastic', 'simple_block_64', 'tube_plain_right_overlay'),
 }
 
-overrides_noprefix = {
+overrides = {
     ('pipeworks:tube_2', 'back'): ('pipeworks_tube_plain', ('_pipeworks_tube_plain_right_overlay', '[transformR90'), ('_pipeworks_tube_plain_right_overlay', '[transformR270')),
     ('pipeworks:tube_2', 'bottom'): ('pipeworks_tube_plain', ('_pipeworks_tube_plain_right_overlay', '[transformR90'), ('_pipeworks_tube_plain_right_overlay', '[transformR270')),
     ('pipeworks:tube_2', 'front'): ('pipeworks_tube_plain', ('_pipeworks_tube_plain_right_overlay', '[transformR90'), ('_pipeworks_tube_plain_right_overlay', '[transformR270')),
