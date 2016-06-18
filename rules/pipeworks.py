@@ -1,4 +1,5 @@
 textures = {
+    '_pipeworks_tube_plain_right_overlay': ('plastic', 'simple_block_64', 'tube_plain_right_overlay'),
     'pipeworks_tube_connection_metallic': (('steel', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_stony': (('stone', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_wooden': (('wood', 'color_black'), 'tube_connection', 'tube_connection'),
@@ -6,10 +7,6 @@ textures = {
     'pipeworks_tube_noctr': ('plastic', 'simple_block_64', 'tube_noctr'),
     'pipeworks_tube_plain': ('plastic', 'simple_block_64', 'tube_plain'),
     'pipeworks_tube_short': ('plastic', 'simple_block_64', 'tube_short'),
-}
-
-override_textures = {
-    'pipeworks_tube_plain_right_overlay': ('plastic', 'simple_block_64', 'tube_plain_right_overlay'),
 }
 
 overrides = {

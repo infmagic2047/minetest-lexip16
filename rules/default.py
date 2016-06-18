@@ -1,4 +1,14 @@
 textures = {
+    '_default_fence_acacia_wood_sides': ('acacia_wood', 'fence_sides', 'fence_sides'),
+    '_default_fence_acacia_wood_topbottom': ('acacia_wood', 'fence_topbottom', 'fence_topbottom'),
+    '_default_fence_aspen_wood_sides': ('aspen_wood', 'fence_sides', 'fence_sides'),
+    '_default_fence_aspen_wood_topbottom': ('aspen_wood', 'fence_topbottom', 'fence_topbottom'),
+    '_default_fence_junglewood_sides': ('jungle_wood', 'fence_sides', 'fence_sides'),
+    '_default_fence_junglewood_topbottom': ('jungle_wood', 'fence_topbottom', 'fence_topbottom'),
+    '_default_fence_pine_wood_sides': ('pine_wood', 'fence_sides', 'fence_sides'),
+    '_default_fence_pine_wood_topbottom': ('pine_wood', 'fence_topbottom', 'fence_topbottom'),
+    '_default_fence_wood_sides': ('wood', 'fence_sides', 'fence_sides'),
+    '_default_fence_wood_topbottom': ('wood', 'fence_topbottom', 'fence_topbottom'),
     'bubble': ('breath', 'bubble', 'bubble'),
     'crack_anylength': ('color_gray', 'crack_anylength', 'crack_anylength'),
     'default_acacia_leaves': (('acacia_leaves_1', 'acacia_leaves_2'), 'acacia_leaves', 'leaves'),
@@ -180,19 +190,6 @@ textures = {
     'gui_hotbar_selected': ('color_cyan', 'gui_hotbar_selected', 'gui_hotbar_selected'),
     'heart': ('health', 'heart', 'heart'),
     'wieldhand': ('hand', 'simple_block', 'hand'),
-}
-
-override_textures = {
-    'default_fence_acacia_wood_sides': ('acacia_wood', 'fence_sides', 'fence_sides'),
-    'default_fence_acacia_wood_topbottom': ('acacia_wood', 'fence_topbottom', 'fence_topbottom'),
-    'default_fence_aspen_wood_sides': ('aspen_wood', 'fence_sides', 'fence_sides'),
-    'default_fence_aspen_wood_topbottom': ('aspen_wood', 'fence_topbottom', 'fence_topbottom'),
-    'default_fence_junglewood_sides': ('jungle_wood', 'fence_sides', 'fence_sides'),
-    'default_fence_junglewood_topbottom': ('jungle_wood', 'fence_topbottom', 'fence_topbottom'),
-    'default_fence_pine_wood_sides': ('pine_wood', 'fence_sides', 'fence_sides'),
-    'default_fence_pine_wood_topbottom': ('pine_wood', 'fence_topbottom', 'fence_topbottom'),
-    'default_fence_wood_sides': ('wood', 'fence_sides', 'fence_sides'),
-    'default_fence_wood_topbottom': ('wood', 'fence_topbottom', 'fence_topbottom'),
 }
 
 overrides = {

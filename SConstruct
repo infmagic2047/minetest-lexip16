@@ -98,21 +98,23 @@ def copy(name, othername):
     add_output('{}.png'.format(name))
 
 
+def get_texture_name(texture):
+    return ('{}_override{}'.format(PROJECT_NAME, texture)
+            if texture[0] == '_' else texture)
+
+
 def add_all(textures):
     for k, v in textures.items():
+        name = get_texture_name(k)
         if isinstance(v, str):
-            copy(k, v)
+            copy(name, get_texture_name(v))
         else:
-            add(k, *v)
-
-
-def get_texture_name(texture):
-    return ('{}_override{}.png'.format(PROJECT_NAME, texture)
-            if texture[0] == '_' else '{}.png'.format(texture))
+            add(name, *v)
 
 
 def get_texture_string(parts):
-    return '^'.join((get_texture_name(part) if part[0] != '[' else part)
+    return '^'.join((get_texture_name(part) + '.png'
+                     if part[0] != '[' else part)
                     if isinstance(part, str)
                     else '({})'.format(get_texture_string(part))
                     for part in parts)
@@ -134,8 +136,6 @@ def add_overrides(overrides):
 
 
 add_all(rules.textures)
-add_all({'{}_override_{}'.format(PROJECT_NAME, k): v
-         for k, v in rules.override_textures.items()})
 add_overrides(rules.overrides)
 env.Default('output')
 env.Alias('zip', PROJECT_NAME + '.zip')

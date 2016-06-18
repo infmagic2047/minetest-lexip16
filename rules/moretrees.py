@@ -1,4 +1,5 @@
 textures = {
+    '_moretrees_rubber_tree_trunk_top_empty': (('rubber_tree_tree', 'rubber_tree_wood'), 'tree_top'),
     'moretrees_apple_tree_leaves': ('apple_tree_leaves', 'simple_block', 'leaves'),
     'moretrees_apple_tree_sapling': (('apple_tree_tree', 'apple_tree_leaves'), 'sapling', 'sapling'),
     'moretrees_apple_tree_trunk': ('apple_tree_tree', 'tree'),
@@ -58,10 +59,6 @@ textures = {
     'moretrees_willow_trunk': ('willow_tree', 'tree'),
     'moretrees_willow_trunk_top': (('willow_tree', 'willow_wood'), 'tree_top'),
     'moretrees_willow_wood': ('willow_wood', 'wood'),
-}
-
-override_textures = {
-    'moretrees_rubber_tree_trunk_top_empty': (('rubber_tree_tree', 'rubber_tree_wood'), 'tree_top'),
 }
 
 overrides = {
