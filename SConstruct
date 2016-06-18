@@ -1,3 +1,4 @@
+import itertools
 import os
 import zipfile
 
@@ -105,6 +106,18 @@ def add_all(textures):
             add(k, *v)
 
 
+def get_texture_name(texture):
+    return ('{}_override{}.png'.format(PROJECT_NAME, texture)
+            if texture[0] == '_' else '{}.png'.format(texture))
+
+
+def get_texture_string(parts):
+    return '^'.join((get_texture_name(part) if part[0] != '[' else part)
+                    if isinstance(part, str)
+                    else '({})'.format(get_texture_string(part))
+                    for part in parts)
+
+
 def add_overrides(overrides, overrides_noprefix):
     overrides_all = {pair: PROJECT_NAME + '_override_' + texture
                      for pair, texture in overrides.items()}
@@ -112,7 +125,9 @@ def add_overrides(overrides, overrides_noprefix):
 
     lines = []
     for (nodename, face), texture in sorted(overrides_all.items()):
-        lines.append('{} {} {}.png'.format(nodename, face, texture))
+        lines.append('{} {} {}'.format(
+            nodename, face, get_texture_string(
+                (texture,) if isinstance(texture, str) else texture)))
 
     def write_overrides(target, source, env):
         with open(str(target[0]), 'w') as fout:
