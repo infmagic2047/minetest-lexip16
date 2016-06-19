@@ -38,6 +38,7 @@ _pipeworks_tube_overrides = {
 }
 
 _pipeworks_tube_overrides_extra = {
+    ('pipeworks:one_way_tube', 'inventory'): '_pipeworks_one_way_tube_inv',
     ('pipeworks:priority_tube_1', 'back'): '_pipeworks_priority_tube_short',
     ('pipeworks:priority_tube_1', 'bottom'): '_pipeworks_priority_tube_short',
     ('pipeworks:priority_tube_1', 'front'): '_pipeworks_priority_tube_short',
@@ -86,6 +87,7 @@ _pipeworks_tube_overrides_extra = {
 textures = {
     '_pipeworks_accelerator_tube_plain_right_overlay': ('accelerator_tube', 'simple_block_64', 'tube_plain_right_overlay'),
     '_pipeworks_crossing_tube_plain_right_overlay': ('plastic', 'crossing_tube_plain_right_overlay', 'tube_plain_right_overlay'),
+    '_pipeworks_one_way_tube_inv': (('plastic', 'one_way_tube_marker'), 'one_way_tube_inv', 'one_way_tube_inv'),
     '_pipeworks_priority_tube_end': ('priority_tube', 'simple_block_64', 'tube_end'),
     '_pipeworks_priority_tube_inv': ('priority_tube', 'simple_block', 'tube_inv'),
     '_pipeworks_priority_tube_noctr': ('priority_tube', 'simple_block_64', 'tube_noctr'),
@@ -103,6 +105,10 @@ textures = {
     'pipeworks_crossing_tube_noctr': ('plastic', 'crossing_tube_noctr', 'crossing_tube_noctr'),
     'pipeworks_crossing_tube_plain': ('plastic', 'crossing_tube_plain', 'crossing_tube_plain'),
     'pipeworks_crossing_tube_short': ('plastic', 'crossing_tube_short', 'crossing_tube_short'),
+    'pipeworks_one_way_tube_input': ('plastic', 'simple_block_64', 'tube_end'),
+    'pipeworks_one_way_tube_output': 'pipeworks_one_way_tube_input',
+    'pipeworks_one_way_tube_side': (('plastic', 'one_way_tube_marker'), 'one_way_tube_left', 'one_way_tube_left'),
+    'pipeworks_one_way_tube_top': (('plastic', 'one_way_tube_marker'), 'one_way_tube_right', 'one_way_tube_right'),
     'pipeworks_tube_connection_metallic': (('steel', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_stony': (('stone', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_wooden': (('wood', 'color_black'), 'tube_connection', 'tube_connection'),
