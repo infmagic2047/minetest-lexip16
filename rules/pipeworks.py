@@ -3,6 +3,7 @@ import itertools
 
 _pipeworks_tube_override_map = {
     'pipeworks:accelerator_tube': ('pipeworks_accelerator_tube_plain', '_pipeworks_accelerator_tube_plain_right_overlay'),
+    'pipeworks:crossing_tube': ('pipeworks_crossing_tube_plain', '_pipeworks_crossing_tube_plain_right_overlay'),
     'pipeworks:priority_tube': ('_pipeworks_priority_tube_plain', '_pipeworks_priority_tube_plain_right_overlay'),
     'pipeworks:tube': ('pipeworks_tube_plain', '_pipeworks_tube_plain_right_overlay'),
 }
@@ -84,6 +85,7 @@ _pipeworks_tube_overrides_extra = {
 
 textures = {
     '_pipeworks_accelerator_tube_plain_right_overlay': ('accelerator_tube', 'simple_block_64', 'tube_plain_right_overlay'),
+    '_pipeworks_crossing_tube_plain_right_overlay': ('plastic', 'crossing_tube_plain_right_overlay', 'tube_plain_right_overlay'),
     '_pipeworks_priority_tube_end': ('priority_tube', 'simple_block_64', 'tube_end'),
     '_pipeworks_priority_tube_inv': ('priority_tube', 'simple_block', 'tube_inv'),
     '_pipeworks_priority_tube_noctr': ('priority_tube', 'simple_block_64', 'tube_noctr'),
@@ -96,6 +98,11 @@ textures = {
     'pipeworks_accelerator_tube_noctr': ('accelerator_tube', 'simple_block_64', 'tube_noctr'),
     'pipeworks_accelerator_tube_plain': ('accelerator_tube', 'simple_block_64', 'tube_plain'),
     'pipeworks_accelerator_tube_short': ('accelerator_tube', 'simple_block_64', 'tube_short'),
+    'pipeworks_crossing_tube_end': ('plastic', 'simple_block_64', 'tube_end'),
+    'pipeworks_crossing_tube_inv': ('plastic', 'crossing_tube_inv', 'crossing_tube_inv'),
+    'pipeworks_crossing_tube_noctr': ('plastic', 'crossing_tube_noctr', 'crossing_tube_noctr'),
+    'pipeworks_crossing_tube_plain': ('plastic', 'crossing_tube_plain', 'crossing_tube_plain'),
+    'pipeworks_crossing_tube_short': ('plastic', 'crossing_tube_short', 'crossing_tube_short'),
     'pipeworks_tube_connection_metallic': (('steel', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_stony': (('stone', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_wooden': (('wood', 'color_black'), 'tube_connection', 'tube_connection'),
