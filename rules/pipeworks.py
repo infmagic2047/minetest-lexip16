@@ -45,6 +45,7 @@ _pipeworks_tube_overrides_extra = {
     ('pipeworks:conductor_tube_on_1', 'front'): '_pipeworks_conductor_tube_on_short',
     ('pipeworks:conductor_tube_on_1', 'top'): '_pipeworks_conductor_tube_on_short',
     ('pipeworks:one_way_tube', 'inventory'): '_pipeworks_one_way_tube_inv',
+    ('pipeworks:one_way_tube', 'wield'): '_pipeworks_one_way_tube_inv',
     ('pipeworks:priority_tube_1', 'back'): '_pipeworks_priority_tube_short',
     ('pipeworks:priority_tube_1', 'bottom'): '_pipeworks_priority_tube_short',
     ('pipeworks:priority_tube_1', 'front'): '_pipeworks_priority_tube_short',
