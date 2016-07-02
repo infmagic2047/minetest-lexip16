@@ -331,6 +331,8 @@ textures = {
     'pipeworks_accelerator_tube_noctr': ('accelerator_tube', 'simple_block_64', 'tube_noctr'),
     'pipeworks_accelerator_tube_plain': ('accelerator_tube', 'simple_block_64', 'tube_plain'),
     'pipeworks_accelerator_tube_short': ('accelerator_tube', 'simple_block_64', 'tube_short'),
+    'pipeworks_black': ('color_black', 'simple_block'),
+    'pipeworks_blue': ('color_blue', 'simple_block'),
     'pipeworks_conductor_tube_end': ('mesecons', 'simple_block_64', 'tube_end'),
     'pipeworks_conductor_tube_inv': ('mesecons', 'simple_block', 'tube_inv'),
     'pipeworks_conductor_tube_noctr': ('mesecons', 'simple_block_64', 'tube_noctr'),
@@ -346,6 +348,7 @@ textures = {
     'pipeworks_crossing_tube_short': ('plastic', 'crossing_tube_short', 'crossing_tube_short'),
     'pipeworks_detector_tube_inv': (('mesecons', 'detector_tube'), 'detector_tube_inv', 'tube_inv'),
     'pipeworks_detector_tube_plain': (('mesecons', 'detector_tube'), 'detector_tube_plain', 'tube_plain'),
+    'pipeworks_green': ('color_green', 'simple_block'),
     'pipeworks_mese_sand_tube_end': ('sand', 'simple_block_64', 'tube_end'),
     'pipeworks_mese_sand_tube_inv': (('sand', 'mese'), 'detector_tube_inv', 'tube_inv'),
     'pipeworks_mese_sand_tube_noctr': ('sand', 'simple_block_64', 'tube_noctr'),
@@ -370,6 +373,7 @@ textures = {
     'pipeworks_one_way_tube_output': 'pipeworks_one_way_tube_input',
     'pipeworks_one_way_tube_side': (('plastic', 'one_way_tube_marker'), 'one_way_tube_left', 'one_way_tube_left'),
     'pipeworks_one_way_tube_top': (('plastic', 'one_way_tube_marker'), 'one_way_tube_right', 'one_way_tube_right'),
+    'pipeworks_red': ('color_red', 'simple_block'),
     'pipeworks_sand_tube_end': ('sand', 'simple_block_64', 'tube_end'),
     'pipeworks_sand_tube_inv': ('sand', 'simple_block', 'tube_inv'),
     'pipeworks_sand_tube_noctr': ('sand', 'simple_block_64', 'tube_noctr'),
@@ -383,6 +387,8 @@ textures = {
     'pipeworks_tube_noctr': ('plastic', 'simple_block_64', 'tube_noctr'),
     'pipeworks_tube_plain': ('plastic', 'simple_block_64', 'tube_plain'),
     'pipeworks_tube_short': ('plastic', 'simple_block_64', 'tube_short'),
+    'pipeworks_white': ('color_white', 'simple_block'),
+    'pipeworks_yellow': ('color_yellow', 'simple_block'),
 }
 
 overrides = dict(itertools.chain(
