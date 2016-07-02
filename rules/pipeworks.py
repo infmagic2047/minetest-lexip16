@@ -43,6 +43,132 @@ _pipeworks_tube_overrides = {
     for rule, func in _pipeworks_tube_override_rules.items()
 }
 
+_pipeworks_mese_tube_overrides_left = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'left'):
+    ('pipeworks_mese_tube_plain_1',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not front and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not top and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not back and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not bottom and (front or back) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not left and not (bottom == top == front == back)
+}
+
+_pipeworks_mese_tube_overrides_right = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'right'):
+    ('pipeworks_mese_tube_plain_2',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not back and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not top and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not front and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not bottom and (front or back) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not right and not (bottom == top == front == back)
+}
+
+_pipeworks_mese_tube_overrides_bottom = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'bottom'):
+    ('pipeworks_mese_tube_plain_3',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not right and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not front and (left or right) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not left and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not back and (left or right) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not bottom and not (left == right == front == back)
+}
+
+_pipeworks_mese_tube_overrides_top = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'top'):
+    ('pipeworks_mese_tube_plain_4',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not right and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not back and (left or right) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not left and (front or back) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not front and (left or right) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not top and not (left == right == front == back)
+}
+
+_pipeworks_mese_tube_overrides_front = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'front'):
+    ('pipeworks_mese_tube_plain_5',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not right and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not top and (left or right) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not left and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not bottom and (left or right) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not front and not (left == right == bottom == top)
+}
+
+_pipeworks_mese_tube_overrides_back = {
+    ('pipeworks:mese_tube_{:d}{:d}{:d}{:d}{:d}{:d}'.format(
+        left, right, bottom, top, front, back), 'back'):
+    ('pipeworks_mese_tube_plain_6',) +
+    (('_pipeworks_mese_tube_plain_right_overlay',)
+     if not left and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR90'),)
+     if not top and (left or right) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR180'),)
+     if not right and (bottom or top) else ()) +
+    ((('_pipeworks_mese_tube_plain_right_overlay', '[transformR270'),)
+     if not bottom and (left or right) else ())
+    for left in (False, True)
+    for right in (False, True)
+    for bottom in (False, True)
+    for top in (False, True)
+    for front in (False, True)
+    for back in (False, True)
+    if not back and not (left == right == bottom == top)
+}
+
 _pipeworks_tube_overrides_extra = {
     ('pipeworks:conductor_tube_on_1', 'back'): '_pipeworks_conductor_tube_on_short',
     ('pipeworks:conductor_tube_on_1', 'bottom'): '_pipeworks_conductor_tube_on_short',
@@ -190,6 +316,7 @@ textures = {
     '_pipeworks_detector_tube_short': (('mesecons', 'detector_tube'), 'detector_tube_short', 'tube_short'),
     '_pipeworks_mese_sand_tube_2_end': ('mese', 'simple_block_64', 'tube_end'),
     '_pipeworks_mese_sand_tube_plain_right_overlay': ('mese', 'simple_block_64', 'tube_plain_right_overlay'),
+    '_pipeworks_mese_tube_plain_right_overlay': ('mese', 'simple_block_64', 'tube_plain_right_overlay'),
     '_pipeworks_one_way_tube_inv': (('plastic', 'one_way_tube_marker'), 'one_way_tube_inv', 'one_way_tube_inv'),
     '_pipeworks_priority_tube_end': ('priority_tube', 'simple_block_64', 'tube_end'),
     '_pipeworks_priority_tube_inv': ('priority_tube', 'simple_block', 'tube_inv'),
@@ -224,6 +351,21 @@ textures = {
     'pipeworks_mese_sand_tube_noctr': ('sand', 'simple_block_64', 'tube_noctr'),
     'pipeworks_mese_sand_tube_plain': (('sand', 'mese'), 'detector_tube_plain', 'tube_plain'),
     'pipeworks_mese_sand_tube_short': (('sand', 'mese'), 'detector_tube_short', 'tube_short'),
+    'pipeworks_mese_tube_end': ('mese', 'simple_block_64', 'tube_end'),
+    'pipeworks_mese_tube_inv': ('mese', 'simple_block', 'tube_inv'),
+    'pipeworks_mese_tube_noctr_1': (('mese', 'color_black', 'color_green', 'color_white', 'color_yellow'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_noctr_2': (('mese', 'color_white', 'color_green', 'color_black', 'color_yellow'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_noctr_3': (('mese', 'color_blue', 'color_black', 'color_red', 'color_white'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_noctr_4': (('mese', 'color_blue', 'color_white', 'color_red', 'color_black'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_noctr_5': (('mese', 'color_blue', 'color_green', 'color_red', 'color_yellow'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_noctr_6': (('mese', 'color_red', 'color_green', 'color_blue', 'color_yellow'), 'mese_tube_noctr', 'mese_tube_noctr'),
+    'pipeworks_mese_tube_plain_1': (('mese', 'color_black', 'color_green', 'color_white', 'color_yellow'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_plain_2': (('mese', 'color_white', 'color_green', 'color_black', 'color_yellow'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_plain_3': (('mese', 'color_blue', 'color_black', 'color_red', 'color_white'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_plain_4': (('mese', 'color_blue', 'color_white', 'color_red', 'color_black'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_plain_5': (('mese', 'color_blue', 'color_green', 'color_red', 'color_yellow'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_plain_6': (('mese', 'color_red', 'color_green', 'color_blue', 'color_yellow'), 'mese_tube_plain', 'mese_tube_plain'),
+    'pipeworks_mese_tube_short': ('mese', 'simple_block_64', 'tube_short'),
     'pipeworks_one_way_tube_input': ('plastic', 'simple_block_64', 'tube_end'),
     'pipeworks_one_way_tube_output': 'pipeworks_one_way_tube_input',
     'pipeworks_one_way_tube_side': (('plastic', 'one_way_tube_marker'), 'one_way_tube_left', 'one_way_tube_left'),
@@ -245,5 +387,11 @@ textures = {
 
 overrides = dict(itertools.chain(
     _pipeworks_tube_overrides.items(),
+    _pipeworks_mese_tube_overrides_left.items(),
+    _pipeworks_mese_tube_overrides_right.items(),
+    _pipeworks_mese_tube_overrides_bottom.items(),
+    _pipeworks_mese_tube_overrides_top.items(),
+    _pipeworks_mese_tube_overrides_front.items(),
+    _pipeworks_mese_tube_overrides_back.items(),
     _pipeworks_tube_overrides_extra.items(),
 ))
