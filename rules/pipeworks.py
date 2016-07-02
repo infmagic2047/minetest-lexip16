@@ -3,6 +3,8 @@ import itertools
 
 _pipeworks_tube_override_map = {
     'pipeworks:accelerator_tube': ('pipeworks_accelerator_tube_plain', '_pipeworks_accelerator_tube_plain_right_overlay'),
+    'pipeworks:conductor_tube_off': ('pipeworks_conductor_tube_plain', '_pipeworks_conductor_tube_plain_right_overlay'),
+    'pipeworks:conductor_tube_on': ('pipeworks_conductor_tube_on_plain', '_pipeworks_conductor_tube_on_plain_right_overlay'),
     'pipeworks:crossing_tube': ('pipeworks_crossing_tube_plain', '_pipeworks_crossing_tube_plain_right_overlay'),
     'pipeworks:priority_tube': ('_pipeworks_priority_tube_plain', '_pipeworks_priority_tube_plain_right_overlay'),
     'pipeworks:tube': ('pipeworks_tube_plain', '_pipeworks_tube_plain_right_overlay'),
@@ -38,6 +40,10 @@ _pipeworks_tube_overrides = {
 }
 
 _pipeworks_tube_overrides_extra = {
+    ('pipeworks:conductor_tube_on_1', 'back'): '_pipeworks_conductor_tube_on_short',
+    ('pipeworks:conductor_tube_on_1', 'bottom'): '_pipeworks_conductor_tube_on_short',
+    ('pipeworks:conductor_tube_on_1', 'front'): '_pipeworks_conductor_tube_on_short',
+    ('pipeworks:conductor_tube_on_1', 'top'): '_pipeworks_conductor_tube_on_short',
     ('pipeworks:one_way_tube', 'inventory'): '_pipeworks_one_way_tube_inv',
     ('pipeworks:priority_tube_1', 'back'): '_pipeworks_priority_tube_short',
     ('pipeworks:priority_tube_1', 'bottom'): '_pipeworks_priority_tube_short',
@@ -86,6 +92,9 @@ _pipeworks_tube_overrides_extra = {
 
 textures = {
     '_pipeworks_accelerator_tube_plain_right_overlay': ('accelerator_tube', 'simple_block_64', 'tube_plain_right_overlay'),
+    '_pipeworks_conductor_tube_on_plain_right_overlay': ('mesecons_on', 'simple_block_64', 'tube_plain_right_overlay'),
+    '_pipeworks_conductor_tube_on_short': ('mesecons_on', 'simple_block_64', 'tube_short'),
+    '_pipeworks_conductor_tube_plain_right_overlay': ('mesecons', 'simple_block_64', 'tube_plain_right_overlay'),
     '_pipeworks_crossing_tube_plain_right_overlay': ('plastic', 'crossing_tube_plain_right_overlay', 'tube_plain_right_overlay'),
     '_pipeworks_one_way_tube_inv': (('plastic', 'one_way_tube_marker'), 'one_way_tube_inv', 'one_way_tube_inv'),
     '_pipeworks_priority_tube_end': ('priority_tube', 'simple_block_64', 'tube_end'),
@@ -100,6 +109,14 @@ textures = {
     'pipeworks_accelerator_tube_noctr': ('accelerator_tube', 'simple_block_64', 'tube_noctr'),
     'pipeworks_accelerator_tube_plain': ('accelerator_tube', 'simple_block_64', 'tube_plain'),
     'pipeworks_accelerator_tube_short': ('accelerator_tube', 'simple_block_64', 'tube_short'),
+    'pipeworks_conductor_tube_end': ('mesecons', 'simple_block_64', 'tube_end'),
+    'pipeworks_conductor_tube_inv': ('mesecons', 'simple_block', 'tube_inv'),
+    'pipeworks_conductor_tube_noctr': ('mesecons', 'simple_block_64', 'tube_noctr'),
+    'pipeworks_conductor_tube_on_end': ('mesecons_on', 'simple_block_64', 'tube_end'),
+    'pipeworks_conductor_tube_on_noctr': ('mesecons_on', 'simple_block_64', 'tube_noctr'),
+    'pipeworks_conductor_tube_on_plain': ('mesecons_on', 'simple_block_64', 'tube_plain'),
+    'pipeworks_conductor_tube_plain': ('mesecons', 'simple_block_64', 'tube_plain'),
+    'pipeworks_conductor_tube_short': ('mesecons', 'simple_block_64', 'tube_short'),
     'pipeworks_crossing_tube_end': ('plastic', 'simple_block_64', 'tube_end'),
     'pipeworks_crossing_tube_inv': ('plastic', 'crossing_tube_inv', 'crossing_tube_inv'),
     'pipeworks_crossing_tube_noctr': ('plastic', 'crossing_tube_noctr', 'crossing_tube_noctr'),
