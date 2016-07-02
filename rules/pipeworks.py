@@ -9,6 +9,7 @@ _pipeworks_tube_override_map = {
     'pipeworks:detector_tube_off': ('pipeworks_detector_tube_plain', '_pipeworks_detector_tube_plain_right_overlay'),
     'pipeworks:detector_tube_on': ('_pipeworks_detector_tube_on_plain', '_pipeworks_detector_tube_plain_right_overlay'),
     'pipeworks:priority_tube': ('_pipeworks_priority_tube_plain', '_pipeworks_priority_tube_plain_right_overlay'),
+    'pipeworks:sand_tube': ('pipeworks_sand_tube_plain', '_pipeworks_sand_tube_plain_right_overlay'),
     'pipeworks:tube': ('pipeworks_tube_plain', '_pipeworks_tube_plain_right_overlay'),
 }
 
@@ -192,6 +193,7 @@ textures = {
     '_pipeworks_priority_tube_plain': ('priority_tube', 'simple_block_64', 'tube_plain'),
     '_pipeworks_priority_tube_plain_right_overlay': ('priority_tube', 'simple_block_64', 'tube_plain_right_overlay'),
     '_pipeworks_priority_tube_short': ('priority_tube', 'simple_block_64', 'tube_short'),
+    '_pipeworks_sand_tube_plain_right_overlay': ('sand', 'simple_block_64', 'tube_plain_right_overlay'),
     '_pipeworks_tube_plain_right_overlay': ('plastic', 'simple_block_64', 'tube_plain_right_overlay'),
     'pipeworks_accelerator_tube_end': ('accelerator_tube', 'simple_block_64', 'tube_end'),
     'pipeworks_accelerator_tube_inv': ('accelerator_tube', 'simple_block', 'tube_inv'),
@@ -217,6 +219,11 @@ textures = {
     'pipeworks_one_way_tube_output': 'pipeworks_one_way_tube_input',
     'pipeworks_one_way_tube_side': (('plastic', 'one_way_tube_marker'), 'one_way_tube_left', 'one_way_tube_left'),
     'pipeworks_one_way_tube_top': (('plastic', 'one_way_tube_marker'), 'one_way_tube_right', 'one_way_tube_right'),
+    'pipeworks_sand_tube_end': ('sand', 'simple_block_64', 'tube_end'),
+    'pipeworks_sand_tube_inv': ('sand', 'simple_block', 'tube_inv'),
+    'pipeworks_sand_tube_noctr': ('sand', 'simple_block_64', 'tube_noctr'),
+    'pipeworks_sand_tube_plain': ('sand', 'simple_block_64', 'tube_plain'),
+    'pipeworks_sand_tube_short': ('sand', 'simple_block_64', 'tube_short'),
     'pipeworks_tube_connection_metallic': (('steel', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_stony': (('stone', 'color_black'), 'tube_connection', 'tube_connection'),
     'pipeworks_tube_connection_wooden': (('wood', 'color_black'), 'tube_connection', 'tube_connection'),
