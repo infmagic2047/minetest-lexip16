@@ -9,8 +9,6 @@ textures = {
     '_default_fence_pine_wood_topbottom': ('pine_wood', 'fence_topbottom', 'fence_topbottom'),
     '_default_fence_wood_sides': ('wood', 'fence_sides', 'fence_sides'),
     '_default_fence_wood_topbottom': ('wood', 'fence_topbottom', 'fence_topbottom'),
-    'bubble': ('breath', 'bubble', 'bubble'),
-    'crack_anylength': ('color_gray', 'crack_anylength', 'crack_anylength'),
     'default_acacia_leaves': (('acacia_leaves_1', 'acacia_leaves_2'), 'acacia_leaves', 'leaves'),
     'default_acacia_sapling': (('acacia_tree', 'acacia_leaves_1'), 'sapling', 'sapling'),
     'default_acacia_tree': ('acacia_tree', 'tree'),
@@ -188,8 +186,6 @@ textures = {
     'gui_hb_bg': ('color_black', 'simple_block', 'gui_hb_bg'),
     'gui_hotbar': ('color_black', 'gui_hotbar', 'gui_hotbar'),
     'gui_hotbar_selected': ('color_cyan', 'gui_hotbar_selected', 'gui_hotbar_selected'),
-    'heart': ('health', 'heart', 'heart'),
-    'wieldhand': ('hand', 'simple_block', 'hand'),
 }
 
 overrides = {
