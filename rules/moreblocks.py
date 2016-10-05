@@ -11,7 +11,6 @@ textures = {
     'moreblocks_iron_checker': ('steel', 'simple_block', 'checkerboard_4x4'),
     'moreblocks_iron_glass': ('steel', 'simple_block', 'glass'),
     'moreblocks_iron_glass_detail': ('steel', 'simple_block', 'glass_detail'),
-    'moreblocks_junglestick': ('jungle_wood', 'simple_block', 'stick'),
     'moreblocks_super_glow_glass': ('super_glow_glass', 'simple_block', 'glass'),
     'moreblocks_super_glow_glass_detail': ('super_glow_glass', 'simple_block', 'glass_detail'),
 }
