@@ -140,6 +140,7 @@ textures = {
     'default_sign_wall_steel': ('steel', 'sign_wall', 'sign_wall'),
     'default_sign_wall_wood': ('wood', 'sign_wall', 'sign_wall'),
     'default_sign_wood': ('wood', 'sign', 'sign'),
+    'default_silver_sand': ('silver_sand', 'sand'),
     'default_snow': ('snow', 'simple_block'),
     'default_snow_side': ('snow', 'simple_block', 'grass_side'),
     'default_snowball': ('snow', 'circle', 'circle'),
