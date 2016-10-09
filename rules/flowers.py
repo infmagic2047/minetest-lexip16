@@ -8,4 +8,5 @@ textures = {
     'flowers_tulip': (('tulip', 'grass'), 'flower', 'flower'),
     'flowers_viola': (('viola', 'grass'), 'flower', 'flower'),
     'flowers_waterlily': (('waterlily_1', 'waterlily_2'), 'waterlily', 'waterlily'),
+    'flowers_waterlily_bottom': ('waterlily_1', 'simple_block', 'waterlily_bottom'),
 }
