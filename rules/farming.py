@@ -13,6 +13,7 @@ textures = {
     'farming_desert_sand_soil': ('desert_sand', 'soil'),
     'farming_desert_sand_soil_wet': ('desert_sand_wet', 'soil'),
     'farming_desert_sand_soil_wet_side': ('desert_sand_wet', 'sand'),
+    'farming_flour': ('flour', 'simple_block', 'flour'),
     'farming_soil': ('dirt', 'soil'),
     'farming_soil_wet': ('dirt_wet', 'soil'),
     'farming_soil_wet_side': ('dirt_wet', 'simple_block'),
