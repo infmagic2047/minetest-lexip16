@@ -6,4 +6,12 @@ textures = {
     'farming_tool_steelhoe': (('steel', 'wood'), 'hoe', 'hoe'),
     'farming_tool_stonehoe': (('stone', 'wood'), 'hoe', 'hoe'),
     'farming_tool_woodhoe': (('wood', 'wood'), 'hoe', 'hoe'),
+    'farming_wheat_1': ('wheat_plant_1', 'simple_block', 'wheat_1'),
+    'farming_wheat_2': ('wheat_plant_1', 'simple_block', 'wheat_2'),
+    'farming_wheat_3': ('wheat_plant_1', 'simple_block', 'wheat_3'),
+    'farming_wheat_4': ('wheat_plant_1', 'simple_block', 'wheat_4'),
+    'farming_wheat_5': ('wheat_plant_1', 'simple_block', 'wheat_5'),
+    'farming_wheat_6': ('wheat_plant_1', 'simple_block', 'wheat_6'),
+    'farming_wheat_7': ('wheat_plant_2', 'simple_block', 'wheat_7'),
+    'farming_wheat_8': (('wheat_plant_2', 'wheat'), 'wheat_8', 'wheat_8'),
 }
