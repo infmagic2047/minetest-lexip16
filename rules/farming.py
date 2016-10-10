@@ -14,4 +14,5 @@ textures = {
     'farming_wheat_6': ('wheat_plant_1', 'simple_block', 'wheat_6'),
     'farming_wheat_7': ('wheat_plant_2', 'simple_block', 'wheat_7'),
     'farming_wheat_8': (('wheat_plant_2', 'wheat'), 'wheat_8', 'wheat_8'),
+    'farming_wheat_seed': ('wheat_seed', 'simple_block', 'seed'),
 }
