@@ -1,4 +1,5 @@
 textures = {
+    'farming_cotton': ('cotton', 'simple_block', 'cotton'),
     'farming_cotton_1': ('cotton_plant_1', 'simple_block', 'cotton_1'),
     'farming_cotton_2': ('cotton_plant_1', 'simple_block', 'cotton_2'),
     'farming_cotton_3': ('cotton_plant_1', 'simple_block', 'cotton_3'),
