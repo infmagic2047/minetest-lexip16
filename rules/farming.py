@@ -1,4 +1,12 @@
 textures = {
+    'farming_cotton_1': ('cotton_plant_1', 'simple_block', 'cotton_1'),
+    'farming_cotton_2': ('cotton_plant_1', 'simple_block', 'cotton_2'),
+    'farming_cotton_3': ('cotton_plant_1', 'simple_block', 'cotton_3'),
+    'farming_cotton_4': ('cotton_plant_1', 'simple_block', 'cotton_4'),
+    'farming_cotton_5': ('cotton_plant_1', 'simple_block', 'cotton_5'),
+    'farming_cotton_6': ('cotton_plant_1', 'simple_block', 'cotton_6'),
+    'farming_cotton_7': ('cotton_plant_2', 'simple_block', 'cotton_7'),
+    'farming_cotton_8': (('cotton_plant_2', 'cotton'), 'cotton_8', 'cotton_8'),
     'farming_straw': ('wheat_plant_2', 'straw'),
     'farming_tool_bronzehoe': (('bronze', 'wood'), 'hoe', 'hoe'),
     'farming_tool_diamondhoe': (('diamond', 'wood'), 'hoe', 'hoe'),
