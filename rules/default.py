@@ -174,8 +174,6 @@ textures = {
     'default_tool_woodpick': (('wood', 'wood'), 'pick', 'pick'),
     'default_tool_woodshovel': (('wood', 'wood'), 'shovel', 'shovel'),
     'default_tool_woodsword': (('wood', 'wood'), 'sword', 'sword'),
-    'default_torch_animated': (('wood', 'fire'), 'torch_wall', 'torch_wall'),
-    'default_torch_on_ceiling_animated': (('wood', 'fire'), 'torch_ceiling', 'torch_ceiling'),
     'default_torch_on_floor': (('wood', 'fire'), 'torch_floor', 'torch_floor'),
     'default_torch_on_floor_animated': 'default_torch_on_floor',
     'default_tree': ('tree', 'tree'),
