@@ -15,6 +15,7 @@ textures = {
     '_default_fence_wood_sides': ('wood', 'fence_sides', 'fence_sides'),
     '_default_fence_wood_topbottom': ('wood', 'fence_topbottom', 'fence_topbottom'),
     'default_acacia_leaves': (('acacia_leaves_1', 'acacia_leaves_2'), 'acacia_leaves', 'leaves'),
+    'default_acacia_leaves_simple': 'default_acacia_leaves',
     'default_acacia_sapling': (('acacia_tree', 'acacia_leaves_1'), 'sapling', 'sapling'),
     'default_acacia_tree': ('acacia_tree', 'tree'),
     'default_acacia_tree_top': (('acacia_tree', 'acacia_wood'), 'tree_top'),
