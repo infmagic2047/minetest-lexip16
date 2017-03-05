@@ -8,4 +8,8 @@ will be in ``output`` directory.
 To make a zip file containing the textures, run ``scons zip``. Append
 ``OPTIMIZE=0`` to command line if you don't have ``optipng``.
 
+Screenshots_
+
 License: CC0
+
+.. _Screenshots: https://github.com/infmagic2047/minetest-lexip16/wiki/Screenshots
