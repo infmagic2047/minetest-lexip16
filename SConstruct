@@ -8,6 +8,7 @@ PROJECT_NAME = 'lexip16'
 
 OPTIMIZE = int(ARGUMENTS.get('OPTIMIZE', 1))
 SYMLINK = int(ARGUMENTS.get('SYMLINK', 1))
+NOINVWIELD = int(ARGUMENTS.get('NOINVWIELD', 0))
 
 
 env = Environment()
@@ -122,6 +123,8 @@ def get_texture_string(parts):
 def add_overrides(overrides):
     lines = []
     for (nodename, face), texture in sorted(overrides.items()):
+        if NOINVWIELD and (face == 'inventory' or face == 'wield'):
+            continue
         lines.append('{} {} {}'.format(
             nodename, face, get_texture_string(
                 (texture,) if isinstance(texture, str) else texture)))
