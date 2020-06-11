@@ -1,3 +1,3 @@
 textures = {
-    'screwdriver': (('wood', 'steel'), 'screwdriver', 'screwdriver'),
+    "screwdriver": (("wood", "steel"), "screwdriver", "screwdriver"),
 }
