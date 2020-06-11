@@ -1,6 +1,3 @@
-import itertools
-
-
 _colorcubes_colors = {
     'yellow', 'orange', 'brown', 'red', 'pink', 'magenta', 'violet',
     'redviolet', 'blue', 'cyan', 'green', 'dark_green', 'white',
@@ -34,9 +31,9 @@ _colorcubes_window_textures = {
 }
 
 
-textures = dict(itertools.chain(
-    _colorcubes_1_textures.items(),
-    _colorcubes_4_textures.items(),
-    _colorcubes_inward_textures.items(),
-    _colorcubes_window_textures.items(),
-))
+textures = {
+    **_colorcubes_1_textures,
+    **_colorcubes_4_textures,
+    **_colorcubes_inward_textures,
+    **_colorcubes_window_textures,
+}

@@ -1,6 +1,3 @@
-import itertools
-
-
 _pipeworks_tube_override_map = {
     'pipeworks:accelerator_tube': ('pipeworks_accelerator_tube_plain', '_pipeworks_accelerator_tube_plain_right_overlay'),
     'pipeworks:conductor_tube_off': ('pipeworks_conductor_tube_plain', '_pipeworks_conductor_tube_plain_right_overlay'),
@@ -398,13 +395,13 @@ textures = {
     'pipeworks_yellow': ('color_yellow', 'simple_block'),
 }
 
-overrides = dict(itertools.chain(
-    _pipeworks_tube_overrides.items(),
-    _pipeworks_mese_tube_overrides_left.items(),
-    _pipeworks_mese_tube_overrides_right.items(),
-    _pipeworks_mese_tube_overrides_bottom.items(),
-    _pipeworks_mese_tube_overrides_top.items(),
-    _pipeworks_mese_tube_overrides_front.items(),
-    _pipeworks_mese_tube_overrides_back.items(),
-    _pipeworks_tube_overrides_extra.items(),
-))
+overrides = {
+    **_pipeworks_tube_overrides,
+    **_pipeworks_mese_tube_overrides_left,
+    **_pipeworks_mese_tube_overrides_right,
+    **_pipeworks_mese_tube_overrides_bottom,
+    **_pipeworks_mese_tube_overrides_top,
+    **_pipeworks_mese_tube_overrides_front,
+    **_pipeworks_mese_tube_overrides_back,
+    **_pipeworks_tube_overrides_extra,
+}

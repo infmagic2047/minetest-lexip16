@@ -1,5 +1,3 @@
-import itertools
-
 from rules.unifieddyes import (_unifieddyes_color_map,
                                _unifieddyes_colors_base)
 
@@ -53,10 +51,10 @@ _unifiedbricks_clayblock_textures = {
 }
 
 
-textures = dict(itertools.chain(
-    _unifiedbricks_brick_textures.items(),
-    _unifiedbricks_brickblock_textures.items(),
-    _unifiedbricks_clay_textures.items(),
-    _unifiedbricks_clayblock_textures.items(),
-    _unifiedbricks_multicolor_textures.items(),
-))
+textures = {
+    **_unifiedbricks_brick_textures,
+    **_unifiedbricks_brickblock_textures,
+    **_unifiedbricks_clay_textures,
+    **_unifiedbricks_clayblock_textures,
+    **_unifiedbricks_multicolor_textures,
+}

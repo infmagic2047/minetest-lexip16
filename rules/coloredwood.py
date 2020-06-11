@@ -1,5 +1,3 @@
-import itertools
-
 from rules.unifieddyes import _unifieddyes_color_map
 
 
@@ -19,8 +17,8 @@ _coloredwood_wood_textures = {
 }
 
 
-textures = dict(itertools.chain(
-    _coloredwood_fence_textures.items(),
-    _coloredwood_stick_textures.items(),
-    _coloredwood_wood_textures.items(),
-))
+textures = {
+    **_coloredwood_fence_textures,
+    **_coloredwood_stick_textures,
+    **_coloredwood_wood_textures,
+}
