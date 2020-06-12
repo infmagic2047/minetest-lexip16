@@ -1,19 +1,14 @@
-from rules.unifieddyes import _unifieddyes_color_map
-
-
-_coloredwood_fence_textures = {
-    "coloredwood_fence_" + name: (color, "fence", "fence") for name, color in _unifieddyes_color_map.items()
-}
-
-_coloredwood_stick_textures = {
-    "coloredwood_stick_" + name: (color, "simple_block", "stick") for name, color in _unifieddyes_color_map.items()
-}
-
-_coloredwood_wood_textures = {"coloredwood_wood_" + name: (color, "wood") for name, color in _unifieddyes_color_map.items()}
-
-
 textures = {
-    **_coloredwood_fence_textures,
-    **_coloredwood_stick_textures,
-    **_coloredwood_wood_textures,
+    "_coloredwood_fence_base": ("color_white", "fence", "fence"),
+    "_coloredwood_fence_base_sides": ("color_white", "fence_sides", "fence_sides"),
+    "_coloredwood_fence_base_topbottom": ("color_white", "fence_topbottom", "fence_topbottom"),
+    "coloredwood_base": ("color_white", "wood"),
+}
+
+overrides = {
+    ("coloredwood:fence", "bottom"): "_coloredwood_fence_base_topbottom",
+    ("coloredwood:fence", "inventory"): "_coloredwood_fence_base",
+    ("coloredwood:fence", "sides"): "_coloredwood_fence_base_sides",
+    ("coloredwood:fence", "top"): "_coloredwood_fence_base_topbottom",
+    ("coloredwood:fence", "wield"): "_coloredwood_fence_base",
 }
